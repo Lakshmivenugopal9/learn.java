@@ -1,2 +1,3 @@
 # learn.java
 This records the journey of my java learning and development of coding, problem solving ability....
+Starting from the programs which might feel easier but way more to go!
