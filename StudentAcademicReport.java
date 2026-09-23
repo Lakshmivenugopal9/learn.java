@@ -1,5 +1,4 @@
 class Student_Report {
-
 public static void main (String[ ] args) {
 
 String name, clg, dept, status;
@@ -35,7 +34,6 @@ System.out.println("---------------------------CALCULATIONS---------------------
 System.out.println("Total marks : "+total);
 System.out.println("Average marks : "+avg);
 System.out.println("Marks needed : "+needed);
-
 System.out.println("Status : "+status);
 
 System.out.println("--------------------------END OF REPORT---------------------------");
