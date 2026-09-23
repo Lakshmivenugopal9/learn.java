@@ -1,13 +1,13 @@
-class StudentAcademicReport {
+class Student_Report {
 
 public static void main (String[ ] args) {
 
 String name, clg, dept, status;
 int sem, math, java, DS, OS, CP, Git, total, avg, needed;
 
-System.out.println("=================================================================");
-System.out.println("======================STUDENT ACADEMIC REPORT====================");
-System.out.println("=================================================================");
+System.out.println("=================================================");
+System.out.println("================STUDENT ACADEMIC REPORT==============");
+System.out.println("=================================================");
 
 name = "Lakshh"; clg = "CIT" ; sem = 3; dept = "CSE";
 
@@ -39,6 +39,6 @@ System.out.println("Marks needed : "+needed);
 System.out.println("Status : "+status);
 
 System.out.println("--------------------------END OF REPORT---------------------------");
-System.out.println("--------------------------Keep Learning----------------------------");
+System.out.println("---------------------------Keep Learning----------------------------");
 }
 }
