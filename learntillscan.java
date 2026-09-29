@@ -1,149 +1,165 @@
 /*
- * ==============================
- *        JAVA LEARNINGS
- * ==============================
+ * ============================================================
+ *                    JAVA LEARNINGS
+ * ============================================================
  *
- * This file contains the Java concepts
- * learned so far.
+ * Everything learned so far:
  *
- * Use this file for revision.
+ * 1.  Basic Java structure
+ * 2.  main() method
+ * 3.  System.out.println()
+ * 4.  Variables
+ * 5.  String
+ * 6.  int
+ * 7.  Changing variable values
+ * 8.  Arithmetic operators
+ * 9.  Comparison operators
+ * 10. if / else
+ * 11. else if
+ * 12. && (AND)
+ * 13. double
+ * 14. float
+ * 15. Math.pow()
+ * 16. Type casting
+ * 17. Scanner
+ * 18. User input
+ * 19. Student Report
+ *
+ * This file is mainly for revision.
  */
+
+import java.util.Scanner;
+
 
 class Java_Learnings {
 
     public static void main(String[] args) {
 
-        // ==========================================
+
+        // ====================================================
         // 1. PRINTING
-        // ==========================================
+        // ====================================================
 
         System.out.println("Hello World");
 
-        // Print text
         System.out.println("My name is Lakshh");
 
-        // Print a number
-        System.out.println(20);
-
-        // Combine text + number
         System.out.println("My age is " + 20);
 
 
-        // ==========================================
+        // ====================================================
         // 2. VARIABLES
-        // ==========================================
+        // ====================================================
 
-        // int = whole numbers
-        int age = 20;
+        int age = 29;
 
         System.out.println("Age: " + age);
 
         // Changing the value of a variable
-        age = 21;
+
+        age = 30;
 
         System.out.println("New age: " + age);
 
 
-        // ==========================================
-        // 3. BASIC ARITHMETIC
-        // ==========================================
+        // ====================================================
+        // 3. STRING
+        // ====================================================
 
-        int a = 20;
-        int b = 5;
+        String name = "Lakshh";
 
-        System.out.println("Addition: " + (a + b));
-        System.out.println("Subtraction: " + (a - b));
-        System.out.println("Multiplication: " + (a * b));
-        System.out.println("Division: " + (a / b));
+        System.out.println("Name: " + name);
 
 
-        // ==========================================
-        // 4. MULTIPLE VARIABLES
-        // ==========================================
+        // ====================================================
+        // 4. BASIC ARITHMETIC
+        // ====================================================
 
-        int math = 98;
-        int java = 94;
-        int DS = 98;
+        int a = 15;
+        int b = 25;
 
-        int total = math + java + DS;
+        int sum = a + b;
+        int sub = a - b;
+        int multiply = a * b;
+        int divide = b / a;
 
-        System.out.println("Total: " + total);
-
-
-        // ==========================================
-        // 5. AVERAGE
-        // ==========================================
-
-        int marks = 586;
-
-        // Integer division:
-        // 586 / 6 gives 97, not 97.666...
-        int average = marks / 6;
-
-        System.out.println("Average: " + average);
+        System.out.println("Sum: " + sum);
+        System.out.println("Subtraction: " + sub);
+        System.out.println("Multiplication: " + multiply);
+        System.out.println("Division: " + divide);
 
 
-        // ==========================================
-        // 6. IF - ELSE
-        // ==========================================
+        // ====================================================
+        // 5. CHANGING A VARIABLE
+        // ====================================================
 
-        int mark = 75;
+        b = 30;
 
-        if (mark >= 40) {
-            System.out.println("PASS");
-        } else {
-            System.out.println("FAIL");
-        }
+        sum = a + b;
+
+        System.out.println("New sum: " + sum);
 
 
-        // ==========================================
-        // 7. COMPARISON OPERATORS
-        // ==========================================
+        // ====================================================
+        // 6. COMPARISON OPERATORS
+        // ====================================================
 
         /*
-         * >   greater than
-         * <   less than
-         * >=  greater than or equal to
-         * <=  less than or equal to
-         * ==  equal to
-         * !=  not equal to
+         * >    Greater than
+         * <    Less than
+         * >=   Greater than or equal to
+         * <=   Less than or equal to
+         * ==   Equal to
+         * !=   Not equal to
          */
 
-        int number = 50;
 
-        if (number >= 40) {
-            System.out.println("Number is 40 or above");
-        }
+        // ====================================================
+        // 7. IF / ELSE
+        // ====================================================
 
+        int marks = 75;
 
-        // ==========================================
-        // 8. AND OPERATOR &&
-        // ==========================================
-
-        int totalMarks = 586;
-        int avg = 97;
-
-        // BOTH conditions must be true
-        if (totalMarks >= 240 && avg >= 40) {
+        if (marks >= 40) {
             System.out.println("PASS");
-        } else {
+        }
+        else {
             System.out.println("FAIL");
         }
 
 
-        // ==========================================
+        // ====================================================
+        // 8. AND OPERATOR &&
+        // ====================================================
+
+        int total = 586;
+        int average = 97;
+
+        /*
+         * && means AND.
+         *
+         * Both conditions must be true.
+         */
+
+        if (total >= 240 && average >= 40) {
+            System.out.println("PASS");
+        }
+        else {
+            System.out.println("FAIL");
+        }
+
+
+        // ====================================================
         // 9. ELSE IF
-        // ==========================================
+        // ====================================================
 
-        int gradeMark = 97;
-
-        if (gradeMark >= 90) {
+        if (average >= 90) {
             System.out.println("Grade: A");
         }
-        else if (gradeMark >= 75) {
+        else if (average >= 75) {
             System.out.println("Grade: B");
         }
-        else if (gradeMark >= 60) {
+        else if (average >= 60) {
             System.out.println("Grade: C");
         }
         else {
@@ -151,57 +167,68 @@ class Java_Learnings {
         }
 
 
-        // ==========================================
-        // 10. STRING VARIABLES
-        // ==========================================
+        // ====================================================
+        // 10. INTEGER DIVISION
+        // ====================================================
 
-        String name = "Lakshh";
-        String college = "CIT";
-        String department = "CSE";
-
-        System.out.println("Name: " + name);
-        System.out.println("College: " + college);
-        System.out.println("Department: " + department);
-
-
-        // ==========================================
-        // 11. DOUBLE
-        // ==========================================
+        int totalMarks = 586;
 
         /*
-         * double can store decimal numbers.
+         * Since both numbers are int,
+         * the result is also treated as an integer.
+         *
+         * 586 / 6 = 97
+         *
+         * The decimal part is removed.
          */
 
-        double price = 25.50;
+        int avg = totalMarks / 6;
+
+        System.out.println("Average: " + avg);
+
+
+        // ====================================================
+        // 11. DOUBLE
+        // ====================================================
+
+        /*
+         * double stores decimal numbers.
+         */
+
+        double price = 25.5;
 
         System.out.println("Price: " + price);
 
 
-        // ==========================================
+        // ====================================================
         // 12. FLOAT
-        // ==========================================
+        // ====================================================
 
         /*
          * float also stores decimal numbers.
-         * 'f' is required after a float literal.
+         *
+         * 'f' is required for a float value.
          */
 
         float value = 25.5f;
 
-        System.out.println("Float value: " + value);
+        System.out.println("Float: " + value);
 
 
-        // ==========================================
+        // ====================================================
         // 13. Math.pow()
-        // ==========================================
+        // ====================================================
 
         /*
          * Math.pow(number, power)
          *
          * Example:
-         * 4³ = 4 × 4 × 4 = 64
          *
-         * Math.pow() returns a double.
+         * 4^3 = 4 × 4 × 4 = 64
+         *
+         * Math.pow() returns double.
+         *
+         * No import is required for Math.pow().
          */
 
         double num = 4;
@@ -211,23 +238,24 @@ class Java_Learnings {
         System.out.println("Cube: " + cube);
 
 
-        // ==========================================
+        // ====================================================
         // 14. CUBE WITHOUT Math.pow()
-        // ==========================================
+        // ====================================================
 
-        int n = 4;
+        int number = 4;
 
-        int cubeNumber = n * n * n;
+        int cubeNumber = number * number * number;
 
         System.out.println("Cube: " + cubeNumber);
 
 
-        // ==========================================
+        // ====================================================
         // 15. TYPE CASTING
-        // ==========================================
+        // ====================================================
 
         /*
-         * Converting one data type into another.
+         * Type casting means converting one data type
+         * into another.
          *
          * double -> int
          */
@@ -236,48 +264,210 @@ class Java_Learnings {
 
         int wholeNumber = (int) decimalNumber;
 
-        System.out.println("After casting: " + wholeNumber);
+        System.out.println("Whole number: " + wholeNumber);
+
+        // Output: 64
 
 
-        // ==========================================
-        // 16. COMPLETE STUDENT REPORT LOGIC
-        // ==========================================
+        // ====================================================
+        // 16. SCANNER
+        // ====================================================
 
-        String studentName = "Lakshh";
+        /*
+         * Scanner is used to take input from the user.
+         *
+         * Scanner belongs to java.util.
+         *
+         * Therefore we need:
+         *
+         * import java.util.Scanner;
+         *
+         * at the top of the program.
+         */
 
-        int mathematics = 98;
-        int javaMarks = 94;
-        int dataStructures = 98;
-        int operatingSystems = 96;
-        int computerProgramming = 100;
-        int git = 100;
+        Scanner input = new Scanner(System.in);
 
-        int studentTotal =
-                mathematics + javaMarks + dataStructures
-                + operatingSystems + computerProgramming + git;
+
+        // ====================================================
+        // 17. SCANNER - STRING INPUT
+        // ====================================================
+
+        System.out.print("Enter your name: ");
+
+        String userName = input.nextLine();
+
+        System.out.println("Hello " + userName);
+
+
+        // ====================================================
+        // 18. SCANNER - INTEGER INPUT
+        // ====================================================
+
+        System.out.print("Enter your age: ");
+
+        int userAge = input.nextInt();
+
+        System.out.println("Your age is: " + userAge);
+
+
+        // ====================================================
+        // 19. SCANNER - DOUBLE INPUT
+        // ====================================================
+
+        System.out.print("Enter your percentage: ");
+
+        double percentage = input.nextDouble();
+
+        System.out.println("Percentage: " + percentage);
+
+
+        // ====================================================
+        // 20. SCANNER + IF / ELSE
+        // ====================================================
+
+        System.out.print("Enter your marks: ");
+
+        int userMarks = input.nextInt();
+
+        if (userMarks >= 40) {
+            System.out.println("PASS");
+        }
+        else {
+            System.out.println("FAIL");
+        }
+
+
+        // ====================================================
+        // 21. SCANNER + ELSE IF
+        // ====================================================
+
+        System.out.print("Enter your average: ");
+
+        int userAverage = input.nextInt();
+
+        if (userAverage >= 90) {
+            System.out.println("Grade: A");
+        }
+        else if (userAverage >= 75) {
+            System.out.println("Grade: B");
+        }
+        else if (userAverage >= 60) {
+            System.out.println("Grade: C");
+        }
+        else {
+            System.out.println("Grade: D");
+        }
+
+
+        // ====================================================
+        // 22. COMPLETE STUDENT REPORT
+        // ====================================================
+
+        String studentName;
+        String college;
+        String department;
+        String status;
+
+        int semester;
+        int math;
+        int java;
+        int DS;
+        int OS;
+        int CP;
+        int Git;
+
+
+        System.out.println();
+        System.out.println("=================================================");
+        System.out.println("============= STUDENT ACADEMIC REPORT ===========");
+        System.out.println("=================================================");
+
+
+        // Student details
+
+        System.out.print("Enter name: ");
+        studentName = input.next();
+
+        System.out.print("Enter college: ");
+        college = input.next();
+
+        System.out.print("Enter semester: ");
+        semester = input.nextInt();
+
+        System.out.print("Enter department: ");
+        department = input.next();
+
+
+        // Marks
+
+        System.out.print("Enter Mathematics marks: ");
+        math = input.nextInt();
+
+        System.out.print("Enter Java marks: ");
+        java = input.nextInt();
+
+        System.out.print("Enter DS marks: ");
+        DS = input.nextInt();
+
+        System.out.print("Enter OS marks: ");
+        OS = input.nextInt();
+
+        System.out.print("Enter CP marks: ");
+        CP = input.nextInt();
+
+        System.out.print("Enter Git marks: ");
+        Git = input.nextInt();
+
+
+        // Calculations
+
+        int studentTotal = math + java + DS + OS + CP + Git;
 
         int studentAverage = studentTotal / 6;
 
-        int marksNeeded = 600 - studentTotal;
-
-        System.out.println("---------------- STUDENT REPORT ----------------");
-
-        System.out.println("Name: " + studentName);
-        System.out.println("Total: " + studentTotal);
-        System.out.println("Average: " + studentAverage);
-        System.out.println("Marks needed: " + marksNeeded);
+        int needed = 600 - studentTotal;
 
 
         // PASS / FAIL
+
         if (studentTotal >= 240 && studentAverage >= 40) {
-            System.out.println("Status: PASS");
+            status = "PASS";
         }
         else {
-            System.out.println("Status: FAIL");
+            status = "FAIL";
         }
 
 
-        // GRADE
+        // Display details
+
+        System.out.println();
+        System.out.println("Name: " + studentName);
+        System.out.println("College: " + college);
+        System.out.println("Semester: " + semester);
+        System.out.println("Department: " + department);
+
+        System.out.println("---------------- SUBJECT MARKS ----------------");
+
+        System.out.println("Mathematics: " + math);
+        System.out.println("Java: " + java);
+        System.out.println("DS: " + DS);
+        System.out.println("OS: " + OS);
+        System.out.println("CP: " + CP);
+        System.out.println("Git: " + Git);
+
+        System.out.println("---------------- CALCULATIONS ----------------");
+
+        System.out.println("Total marks: " + studentTotal);
+        System.out.println("Average marks: " + studentAverage);
+        System.out.println("Marks needed: " + needed);
+
+        System.out.println("Status: " + status);
+
+
+        // ====================================================
+        // 23. GRADE
+        // ====================================================
+
         if (studentAverage >= 90) {
             System.out.println("Grade: A");
         }
@@ -292,9 +482,16 @@ class Java_Learnings {
         }
 
 
-        // ==========================================
-        // END OF JAVA LEARNINGS
-        // ==========================================
+        // ====================================================
+        // 24. CLOSE SCANNER
+        // ====================================================
+
+        input.close();
+
+
+        // ====================================================
+        // END
+        // ====================================================
 
         System.out.println("-----------------------------------------------");
         System.out.println("Keep Learning Java!");
