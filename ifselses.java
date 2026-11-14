@@ -2,7 +2,7 @@ class Student_Report {
 
 public static void main (String[ ] args) {
 
-String name, clg, dept, status;
+String name, clg, dept;
 int sem, math, java, DS, OS, CP, Git, total, avg, needed;
 
 System.out.println("=================================================");

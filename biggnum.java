@@ -14,5 +14,6 @@ public class biggnum {
         else {
             System.out.println("Second numberis bigger");
         }
+        sc.close();
     }
 }
