@@ -4,6 +4,6 @@ class square{
         int a=12, b=2, squarea, squareb;
         squarea = a*a;
         squareb = b*b;
-        System.out.println("Square of a is:\n"+squarea+"Square of b is:\n"+squareb);
+        System.out.println("Square of a is: "+squarea+"\nSquare of b is:"+squareb);
     }
 }
